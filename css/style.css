@@ -23,7 +23,8 @@ html{
 @media (max-width: 768px) {
     #navbar {
         flex-direction: column; 
-        padding: none;
+        padding-right: none;
+
     }
     #navbar ul {
         flex-direction: column;
@@ -75,14 +76,11 @@ html{
 .logo {
     position: fixed;
     height: auto;
-    left: 0%;
     width: 85px;
     padding-left: 20vh;
-    
 }
 .napis {
-    padding-right: 520px;
-
+    padding-right: 500px;
 }
 #navbar {
     position: fixed;
