@@ -89,9 +89,10 @@ html{
     background-color: rgba(0, 0, 0, 0.44);
     color: rgb(155, 155, 155);
     display: flex;
-    padding: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
     justify-content: flex-end;
-    width: 98%;
+    width: 100%;
     color: var(--primary-color);
     margin-right: 2rem;
     text-shadow: 2px 2px 1px #1f1f1f;
