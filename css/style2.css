@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root{
+    --primary-color: rgb(255, 255, 255);
+    --secondary-color: rgb(70, 70, 70);
+}
+html{
+    scroll-behavior: smooth;
+    color: var(--primary-color);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box;
+}
+#font {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.75rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+}
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column; 
+        padding-right: none;
+
+    }
+    #navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #navbar ul li a {
+        padding: 0.5rem;
+        font-size: 1rem; 
+    }
+
+    #showcase .showcase-content {
+        padding: 1rem;
+    }
+    .lead {
+        font-size: 2.5rem; 
+        margin-bottom: 2rem;
+    }
+    .btn {
+        font-size: 1rem; 
+        padding: 0.5rem 1.5rem;
+    }
+    .background1, .background2 {
+        height: auto; 
+        padding: 20px 10px; 
+    }
+    .text1, .text2 {
+        font-size: 2rem; 
+        padding-top: 50px;
+    }
+}
+@media (max-width: 480px) {
+    .logo {
+        padding-left: 5vh; 
+        width: 70px; 
+    }
+    #navbar {
+        padding: 10px;
+    }
+    .lead {
+        font-size: 2rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+    }
+}
+
+.logo {
+    position: fixed;
+    height: auto;
+    width: 85px;
+    padding-left: 20vh;
+}
+.napis {
+    padding-right: 520px;
+}
+#navbar {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.44);
+    color: rgb(155, 155, 155);
+    display: flex;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    justify-content: flex-end;
+    width: 100%;
+    color: var(--primary-color);
+    margin-right: 2rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+}
+#navbar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+#navbar ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+#navbar ul li a{
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+#navbar ul li :hover{
+    background-color: rgb(100, 100, 100);
+    border-radius: 5px;
+}
+.ftr {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    align-items: center;
+    padding: 10px;
+    height: 180px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.image {
+    background: url(../img/logo.maturita.svg) no-repeat center center/cover;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+.background1 {
+    height: 750px;
+    background-color: #333;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    width: 60%;
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 30px 60px 40px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0,2);
+    color: black;
+}
+.container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .content .LevaStrana {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+.content .LevaStrana::before{
+    content: '';
+    position: absolute;
+    height: 90%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #333;
+}
+.content .LevaStrana .detaily{
+    margin: 14px;
+    text-align: center;
+}
+.content .LevaStrana .detaily i{
+    font-size: 30px;
+    color: #545454;
+}
+.content .LevaStrana .detaily .topic {
+    font-size: 18px;
+    color: #545454;
+    margin-bottom: 10px;
+}
+.content .LevaStrana .detaily .text-prvni,
+.content .LevaStrana .detaily .text-druhy{
+    font-size: 14px;
+    color: #969696;
+}
+
+
+
+
+.container .content .PravaStrana {
+    width: 75%;
+    margin-left: 75px;
+}
+.content .PravaStrana .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: #545454;
+}
+.PravaStrana .input-box {
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+.PravaStrana .input-box input,
+.PravaStrana .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    background: #eaeaea;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+.PravaStrana .input-box .message-box {
+    min-height: 110px;
+    margin-top: 6px;
+}
+.PravaStrana .button{
+    display: inline-block;
+    margin-top: 12px;
+}
+.PravaStrana .button input[type="button"]{
+    color: #ffffff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #545454;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button input[type="button"]:hover {
+    background: #757575;
+}
+@media (max-width: 950px) {
+    .container {
+        width: 90%;
+        padding: 30px 35px 40px 35px;
+        color: black;
+    }
+}
+@media (max-width: 820px) {
+    .container {
+        margin: 40px 0;
+        height: 100%;
+        color: black;
+    }
+    .container .content {
+        flex-direction: column-reverse;
+    }
+    .container .content .LevaStrana {
+        width: 100%;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .container .content .LevaStrana::before {
+        display: none;
+    }
+    .container .content .PravaStrana {
+        width: 100%;
+        margin-left: 0;
+    } 
+}
+
+
+

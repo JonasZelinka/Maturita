@@ -80,7 +80,7 @@ html{
     padding-left: 20vh;
 }
 .napis {
-    padding-right: 500px;
+    padding-right: 520px;
 }
 #navbar {
     position: fixed;
@@ -112,6 +112,8 @@ html{
 #navbar ul li :hover{
     background-color: rgb(100, 100, 100);
     border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 #showcase {
     background: url(../img/1082422.jpg)no-repeat center center/cover;
@@ -129,7 +131,7 @@ html{
     background-color: rgba(0, 0, 0, 0)
 }
 .lead {
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: 3rem;
     color: var(--primary-color);
     font-weight: bold;
@@ -147,6 +149,8 @@ html{
 }
 .btn:hover {
     background-color: rgba(70, 70, 70, 0.504);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .background1 {
