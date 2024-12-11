@@ -130,6 +130,9 @@ html{
     padding: 0 2rem;
     background-color: rgba(0, 0, 0, 0)
 }
+#what {
+    scroll-margin-top: -5px;
+}
 .lead {
     font-size: 4rem;
     margin-bottom: 3rem;
