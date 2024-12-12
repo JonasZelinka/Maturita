@@ -69,7 +69,6 @@ html{
         font-size: 0.9rem;
     }
 }
-
 .logo {
     position: fixed;
     height: auto;
@@ -188,10 +187,6 @@ html{
     font-size: 14px;
     color: #969696;
 }
-
-
-
-
 .container .content .PravaStrana {
     width: 75%;
     margin-left: 75px;
