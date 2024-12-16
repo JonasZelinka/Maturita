@@ -13,9 +13,13 @@
 <body style="background-color: black;">
     
     <nav id="navbar">
-        
+
+        <div id="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+
         <div id="font">
-        <ul>
+        <ul class="hide">
             <a href="index.html">
                 <div class="logo"><img src="./img/logo.png" style="width: 90px; height: 85px;" alt="logo"></div>
                 </a>
@@ -28,7 +32,7 @@
         </ul>
     </div>
     </nav>
-    
+
     <div id="showcase">
         <div class="showcase-content">
             <p class="lead">Online Fitness Trenér</p>
@@ -39,7 +43,7 @@
     <section id="what">
     <div class="background1">
         <div class="text2"><p>Úvodní video ke stránce</p></div>
-        <video controls src="bench-press-fail-safety-bars-failure.mp4"height="500" width="1500"></video>
+        <video src=""height="500" width="1500"></video>
 
     </div>
     </section>
@@ -55,6 +59,23 @@
     </div>
 
 
+    <script>
+        // Toggle Navbar on Mobile
+        const hamburgerMenu = document.querySelector("#hamburger-menu");
+        const navLinks = document.querySelector("#navbar ul");
 
+        hamburgerMenu.addEventListener("click", () => {
+            // Toggle between hide and show classes
+            if (navLinks.classList.contains("hide")) {
+                navLinks.classList.remove("hide");
+                navLinks.classList.add("show");
+            } else {
+                navLinks.classList.remove("show");
+                navLinks.classList.add("hide");
+            }
+        });
+    </script>
+
+    
 </body>
 </html>

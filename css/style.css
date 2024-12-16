@@ -19,56 +19,7 @@ html{
     font-size: 1.75rem;
     text-shadow: 2px 2px 1px #1f1f1f;
 }
-@media (max-width: 768px) {
-    #navbar {
-        flex-direction: column; 
-        padding-right: none;
 
-    }
-    #navbar ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    #navbar ul li a {
-        padding: 0.5rem;
-        font-size: 1rem; 
-    }
-
-    #showcase .showcase-content {
-        padding: 1rem;
-    }
-    .lead {
-        font-size: 2.5rem; 
-        margin-bottom: 2rem;
-    }
-    .btn {
-        font-size: 1rem; 
-        padding: 0.5rem 1.5rem;
-    }
-    .background1, .background2 {
-        height: auto; 
-        padding: 20px 10px; 
-    }
-    .text1, .text2 {
-        font-size: 2rem; 
-        padding-top: 50px;
-    }
-}
-@media (max-width: 480px) {
-    .logo {
-        padding-left: 5vh; 
-        width: 70px; 
-    }
-    #navbar {
-        padding: 10px;
-    }
-    .lead {
-        font-size: 2rem;
-    }
-    .btn {
-        font-size: 0.9rem;
-    }
-}
 .logo {
     position: relative;
     padding-left: 8rem;
@@ -185,6 +136,62 @@ html{
     text-align: center;
     padding-top: 100px;
 }
+
+
+
+
+
+/* Hamburger menu styling */
+#hamburger-menu {
+    display: none; /* Initially hidden */
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 20px; /* Adjust based on your navbar height */
+    right: 20px;
+    color: white; /* Matches navbar text color */
+    z-index: 101; /* Above the navbar links */
+}
+
+/* Show hamburger menu on smaller screens */
+@media (max-width: 768px) {
+    #hamburger-menu {
+        display: block; /* Visible only on mobile */
+    }
+
+    /* Hide the navbar links when the hamburger is shown */
+    #navbar ul {
+        display: none; /* Hide links by default */
+        flex-direction: column; /* Stack links vertically when shown */
+        background-color: rgba(0, 0, 0, 0.9); /* Dropdown background */
+        position: absolute;
+        top: 85px; /* Below the navbar */
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        z-index: 100;
+    }
+
+    /* Style for navbar links in dropdown */
+    #navbar ul li {
+        margin: 0.5rem 0;
+    }
+
+    #navbar ul li a {
+        padding: 1rem;
+        color: white;
+        text-align: center;
+    }
+
+    /* When menu is toggled, show the navbar links */
+    #navbar ul.show {
+        display: flex; /* Show links in dropdown */
+    }
+}
+
+
+
+
 
 
 
