@@ -141,59 +141,6 @@ html{
 
 
 
-/* Hamburger menu styling */
-#hamburger-menu {
-    display: none; /* Initially hidden */
-    font-size: 2rem;
-    cursor: pointer;
-    position: absolute;
-    top: 20px; /* Adjust based on your navbar height */
-    right: 20px;
-    color: white; /* Matches navbar text color */
-    z-index: 101; /* Above the navbar links */
-}
-
-/* Show hamburger menu on smaller screens */
-@media (max-width: 768px) {
-    #hamburger-menu {
-        display: block; /* Visible only on mobile */
-    }
-
-    /* Hide the navbar links when the hamburger is shown */
-    #navbar ul {
-        display: none; /* Hide links by default */
-        flex-direction: column; /* Stack links vertically when shown */
-        background-color: rgba(0, 0, 0, 0.9); /* Dropdown background */
-        position: absolute;
-        top: 85px; /* Below the navbar */
-        left: 0;
-        width: 100%;
-        padding: 1rem 0;
-        z-index: 100;
-    }
-
-    /* Style for navbar links in dropdown */
-    #navbar ul li {
-        margin: 0.5rem 0;
-    }
-
-    #navbar ul li a {
-        padding: 1rem;
-        color: white;
-        text-align: center;
-    }
-
-    /* When menu is toggled, show the navbar links */
-    #navbar ul.show {
-        display: flex; /* Show links in dropdown */
-    }
-}
-
-
-
-
-
-
 
 
 

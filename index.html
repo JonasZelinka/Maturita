@@ -14,10 +14,6 @@
     
     <nav id="navbar">
 
-        <div id="hamburger-menu">
-                <i class="fas fa-bars"></i>
-            </div>
-
         <div id="font">
         <ul class="hide">
             <a href="index.html">
@@ -58,24 +54,5 @@
     </footer>
     </div>
 
-
-    <script>
-        // Toggle Navbar on Mobile
-        const hamburgerMenu = document.querySelector("#hamburger-menu");
-        const navLinks = document.querySelector("#navbar ul");
-
-        hamburgerMenu.addEventListener("click", () => {
-            // Toggle between hide and show classes
-            if (navLinks.classList.contains("hide")) {
-                navLinks.classList.remove("hide");
-                navLinks.classList.add("show");
-            } else {
-                navLinks.classList.remove("show");
-                navLinks.classList.add("hide");
-            }
-        });
-    </script>
-
-    
 </body>
 </html>
