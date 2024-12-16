@@ -46,8 +46,11 @@ html{
         padding: 0.5rem 1.5rem;
     }
     .background1, .background2 {
-        height: auto; 
+        height: 900px; 
         padding: 20px 10px; 
+    }
+    .ftr {
+        height: 200px;
     }
     .text1, .text2 {
         font-size: 2rem; 
