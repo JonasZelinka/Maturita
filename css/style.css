@@ -300,6 +300,9 @@ img {
     .container .content .LevaStrana::before{
         display: none;
     }
+    .background-kontakt {
+        height: 1000px;
+    }
 }
 @media (max-width: 820px) {
     .container{
