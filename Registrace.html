@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <!-- Hlavička stránky obsahující meta informace a odkazy na styly. -->
+    <!-- Záhlaví stránky obsahující meta informace a odkazy na styly. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrace</title>
@@ -13,83 +13,104 @@
 <!-- Tělo stránky s černým pozadím. -->
 <body style="background-color: rgb(0, 0, 0);">
 
-    
-    <div id="font"></div>
 
     <!-- Navigační menu -->
     <nav id="navbar">
-
-
+        <!-- Logo s odkazem na domovskou stránku. -->
         <a href="index.html">
             <div class="logo"><img src="./img/logo.png" alt="logo" width="100px"></div>
         </a>
+        <!-- Odkazy na jednotlivé sekce webu. -->
         <ul>
             <li><a href="index.html">Úvod</a></li>
-            <li><a href="Služby.html">Služby</a></li>
-            <li><a href="O mně.html">O mně</a></li>
+            <li><a href="Sluzby.html">Služby</a></li>
+            <li><a href="O_mne.html">O mně</a></li>
             <li><a href="Kontakt.html">Kontakt</a></li>
             <li><a href="Prihlaseni.html">Přihlášení</a></li>
         </ul>
     </nav>
-    </div>
 
     <div class="background-registrace">
         
         <div class="wrapper2">
+            <!-- Formulář pro registraci uživatelů -->
             <form action="">
+                <!-- Nadpis formuláře -->
                 <h1>Registrace</h1>
-
+        
+                <!-- Sekce pro zadání jména a uživatelského jména -->
                 <div class="input-box2">
+                    <!-- Pole pro celé jméno -->
                     <div class="input-field2">
                         <input type="text" placeholder="Celé jméno" required>
                         <i class="bx bxs-user"></i>
                     </div>
+                    <!-- Pole pro uživatelské jméno -->
                     <div class="input-field2">
                         <input type="text" placeholder="Uživatelské jméno" required>
                         <i class="bx bxs-user"></i>
                     </div>
                 </div>
-
+        
+                <!-- Sekce pro zadání emailu a telefonního čísla -->
                 <div class="input-box2">
+                    <!-- Pole pro email -->
                     <div class="input-field2">
                         <input type="email" placeholder="Email" required>
                         <i class="bx bxs-envelope"></i>
                     </div>
+                    <!-- Pole pro telefonní číslo -->
                     <div class="input-field2">
                         <input type="text" placeholder="Telefonní číslo" required>
                         <i class="bx bxs-phone"></i>
                     </div>
                 </div>
-
+        
+                <!-- Sekce pro zadání hesla a jeho potvrzení -->
                 <div class="input-box2">
+                    <!-- Pole pro heslo -->
                     <div class="input-field2">
                         <input type="password" placeholder="Heslo" required>
                         <i class="bx bxs-lock-alt"></i>
                     </div>
+                    <!-- Pole pro potvrzení hesla -->
                     <div class="input-field2">
                         <input type="password" placeholder="Potvrdit heslo" required>
                         <i class="bx bxs-lock-alt"></i>
                     </div>
                 </div>
-
-                <label><input type="checkbox">Souhlasím se Zásadami zpracování osobních údajů</label>
-
+        
+                <!-- Checkbox pro souhlas s podmínkami zpracování osobních údajů -->
+                <label>
+                    <input type="checkbox">Souhlasím se Zásadami zpracování osobních údajů
+                </label>
+        
+                <!-- Tlačítko pro odeslání registračního formuláře -->
                 <button type="submit" class="btn-registrace">Registrovat</button>
             </form>
-        </div>  
+        </div>
 
     </div>
 
 
+    <!-- footer -->
     <div>
-
         <footer>
             <div class="ftr">
-                <div class="image"></div>
-                <h3>Jonáš Zelinka | 2025</h3>
-            </div>
+                <a href="index.html">
+                    <div class="image"></div>
+                </a>
+                <h3>&copy; Jonáš Zelinka | 2024</h3>
+            
+            <!-- Sociální sítě -->
+            <div class="ftr-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+          </div>
         </footer>
-        </div>
+    </div>
     
 </body>
 </html>

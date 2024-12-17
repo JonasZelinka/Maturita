@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <!-- Hlavička stránky obsahující meta informace a odkazy na styly. -->
+    <!-- Záhlaví stránky obsahující meta informace a odkazy na styly. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Přihlášení</title>
@@ -13,62 +13,78 @@
 <!-- Tělo stránky s černým pozadím. -->
 <body style="background-color: rgb(0, 0, 0);">
     
-    
-    <div id="font"></div>
 
     <!-- Navigační menu -->
     <nav id="navbar">
-
-        
+        <!-- Logo s odkazem na domovskou stránku. -->
         <a href="index.html">
             <div class="logo"><img src="./img/logo.png" alt="logo" width="100px"></div>
         </a>
+        <!-- Odkazy na jednotlivé sekce webu. -->
         <ul>
             <li><a href="index.html">Úvod</a></li>
-            <li><a href="Služby.html">Služby</a></li>
-            <li><a href="O mně.html">O mně</a></li>
+            <li><a href="Sluzby.html">Služby</a></li>
+            <li><a href="O_mne.html">O mně</a></li>
             <li><a href="Kontakt.html">Kontakt</a></li>
             <li><a href="Prihlaseni.html">Přihlášení</a></li>
         </ul>
-
-
     </nav>
-    </div>
     
     <div class="background-prihlaseni">
         
+    <!-- Wrapper obklopující formulář pro přihlášení. -->
     <div class="wrapper">
         <form action="">
+            <!-- Nadpis formuláře. -->
             <h1>Přihlášení</h1>
+            
+            <!-- Pole pro uživatelské jméno. -->
             <div class="input-box">
                 <input type="text" placeholder="Uživatelské jméno" required>
                 <i class='bx bxs-user'></i>
             </div>
+            
+            <!-- Pole pro heslo. -->
             <div class="input-box">
                 <input type="password" placeholder="Heslo" required>
                 <i class='bx bxs-lock-alt' ></i>
             </div>
+            
+            <!-- Možnosti zapamatování a odkazu na zapomenuté heslo. -->
             <div class="remember-forgot">
                 <label><input type="checkbox">Zapamatovat si mě</label>
                 <a href="#">Zapomenuté heslo</a>
             </div>
+            
+            <!-- Tlačítko pro odeslání formuláře. -->
             <button type="submit" class="btn">Přihlasit</button>
+            
+            <!-- Odkaz na registraci pro nové uživatele. -->
             <div class="register-link">
-
                 <p>Nemáte účet? <a href="Registrace.html">Registrovat</a></p>
-              </div>
-            </form>
-          </div>
+            </div>
+        </form>
+    </div>
     </div>
 
+    <!-- footer -->
     <div>
         <footer>
             <div class="ftr">
-                <div class="image"></div>
-                <h3>Jonáš Zelinka | 2025</h3>
-            </div>
+                <a href="index.html">
+                    <div class="image"></div>
+                </a>
+                <h3>&copy; Jonáš Zelinka | 2024</h3>
+            
+            <!-- Sociální sítě -->
+            <div class="ftr-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+          </div>
         </footer>
-        </div>
+    </div>
     
 </body>
 </html>

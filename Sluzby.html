@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <!-- Záhlaví stránky obsahující meta informace a odkazy na styly. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabídka</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css">
+    <link rel="icon" href="./img/favicon-16x16.png" type="image/x-icon">
+</head>
+<!-- Tělo stránky s černým pozadím. -->
+<body style="background-color: rgb(0, 0, 0);">
+
+
+    <!-- Navigační menu -->
+    <nav id="navbar">
+        <!-- Logo s odkazem na domovskou stránku. -->
+        <a href="index.html">
+            <div class="logo"><img src="./img/logo.png" alt="logo" width="100px"></div>
+        </a>
+        <!-- Odkazy na jednotlivé sekce webu. -->
+        <ul>
+            <li><a href="index.html">Úvod</a></li>
+            <li><a href="Sluzby.html">Služby</a></li>
+            <li><a href="O_mne.html">O mně</a></li>
+            <li><a href="Kontakt.html">Kontakt</a></li>
+            <li><a href="Prihlaseni.html">Přihlášení</a></li>
+        </ul>
+    </nav>
+
+    <div class="background-sluzby">
+
+        <section class="section__container price__container">
+            <!-- Sekce pro služby a ceník -->
+            <h2 class="section__header">Služby a Ceník</h2>
+            <!-- Podnadpis sekce -->
+            <p class="section__subheader">Vyberte si z více možností tréninkových plánů či jídelníčku</p>
+            
+            <!-- Mřížka obsahující jednotlivé cenové karty -->
+            <div class="price__grid">
+        
+                <!-- Karta Základní plán -->
+                <div class="price__card">
+                    <div class="price__card__content">
+                        <!-- Název a cena plánu -->
+                        <h4>Základní plán</h4>
+                        <h3>1 199 Kč</h3>
+                        <!-- Výhody a popis plánu -->
+                        <p><i class="ri-checkbox-circle-line"></i> Délka spolupráce 1 měsíc</p>
+                        <p><i class="ri-checkbox-circle-line"></i> Tréninky 3x týdně</p>
+                        <p><i class="ri-checkbox-circle-line"></i> Full body styl</p>
+                    </div>
+                    <!-- Tlačítko pro zakoupení plánu -->
+                    <button class="btn-sluzby price__btn">Zakoupit</button>
+                </div>
+        
+                <!-- Karta Základní jídelníček -->
+                <div class="price__card">
+                    <div class="price__card__content">
+                        <!-- Název a cena jídelníčku -->
+                        <h4>Základní Jídelníček </h4>
+                        <h3>1 199 Kč</h3>
+                        <!-- Výhody a popis jídelníčku -->
+                        <p><i class="ri-checkbox-circle-line"></i> Délka spolupráce 1 měsíc</p>
+                        <p><i class="ri-checkbox-circle-line"></i> Volba z několika jídel</p>
+                        <p><i class="ri-checkbox-circle-line"></i> S ohledem na Vaše cíle</p>
+                    </div>
+                    <!-- Tlačítko pro zakoupení jídelníčku -->
+                    <button class="btn-sluzby price__btn">Zakoupit</button>
+                </div>
+        
+                <!-- Karta Tréninky a strava na míru -->
+                <div class="price__card">
+                    <div class="price__card__content">
+                        <!-- Název a cena komplexního plánu -->
+                        <h4>Tréninky a strava na míru</h4>
+                        <h3>2499 Kč</h3>
+                        <!-- Výhody a popis plánu -->
+                        <p><i class="ri-checkbox-circle-line"></i> Délka spolupráce 1 měsíc</p>
+                        <p><i class="ri-checkbox-circle-line"></i> Počet tréninků dle potřeby</p>
+                        <p><i class="ri-checkbox-circle-line"></i> Jídelníček na míru</p>
+                        <p><i class="ri-checkbox-circle-line"></i> Společné tréninky v ceně</p>
+                        <p><i class="ri-checkbox-circle-line"></i> Možnost konzultace </p>
+                    </div>
+                    <!-- Tlačítko pro zakoupení komplexního plánu -->
+                    <button class="btn-sluzby price__btn">Zakoupit</button>
+                </div>
+        
+            </div>
+        </section>
+
+    </div>
+
+    <!-- footer -->
+    <div>
+        <footer>
+            <div class="ftr">
+                <a href="index.html">
+                    <div class="image"></div>
+                </a>
+                <h3>&copy; Jonáš Zelinka | 2024</h3>
+            
+            <!-- Sociální sítě -->
+            <div class="ftr-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+          </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
