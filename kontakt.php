@@ -33,7 +33,6 @@ $result = $conn->query($sql);
             <li><a href="Sluzby.html">Služby</a></li>
             <li><a href="O_mne.html">O mně</a></li>
             <li><a href="Kontakt.php">Kontakt</a></li>
-            <li><a href="Prihlaseni.html">Přihlášení</a></li>
         </ul>
     </nav>
 
