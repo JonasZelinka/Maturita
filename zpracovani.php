@@ -11,14 +11,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("ssi", $jmeno, $email, $id_services);
 
     if ($stmt->execute()) {
-        echo "Objednávka byla úspěšně uložena.";
+        echo "Objednávka se uskutečnila.";
     } else {
-        echo "Chyba při ukládání: " . $stmt->error;
+        echo "Uložení se nezdařilo: " . $stmt->error;
     }
 
     $stmt->close();
     $conn->close();
 } else {
-    echo "Neplatný požadavek.";
+    echo "Nastala chyba.";
 }
 ?>

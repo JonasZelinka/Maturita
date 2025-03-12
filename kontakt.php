@@ -32,6 +32,7 @@ $result = $conn->query($sql);
             <li><a href="index.html">Úvod</a></li>
             <li><a href="Sluzby.html">Služby</a></li>
             <li><a href="O_mne.html">O mně</a></li>
+            <li><a href="Galerie.html">Galerie</a></li>
             <li><a href="Kontakt.php">Kontakt</a></li>
         </ul>
     </nav>
@@ -45,7 +46,7 @@ $result = $conn->query($sql);
                     <div class="adresa detaily">
                         <i class="fas fa-map-marker-alt"></i>
                         <div class="topic">Kde mě najdete?</div>
-                        <div class="text-prvni">Fitness Pepa</div>
+                        <div class="text-prvni">JZ Fitness</div>
                     </div>
                     <div class="telefon detaily">
                         <i class="fas fa-phone-alt"></i>
@@ -60,7 +61,7 @@ $result = $conn->query($sql);
                 </div>
                 <!-- Pravá strana sekce s kontaktním formulářem -->
                 <div class="PravaStrana">
-                    <div class="topic-text">Pošlete mi zprávu</div>
+                    <div class="topic-text">Vyberte si svou službu</div>
                 
                 <form action="zpracovani.php" method="post">
                     <!-- Vstupní pole pro jméno -->
