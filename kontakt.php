@@ -1,3 +1,11 @@
+<?php
+include 'config.php'; // Připojení k databázi
+
+// Načtení nabídek z databáze
+$sql = "SELECT id, nazev FROM services";
+$result = $conn->query($sql);
+?>
+
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -24,7 +32,7 @@
             <li><a href="index.html">Úvod</a></li>
             <li><a href="Sluzby.html">Služby</a></li>
             <li><a href="O_mne.html">O mně</a></li>
-            <li><a href="kontakt.php">Kontakt</a></li>
+            <li><a href="Kontakt.php">Kontakt</a></li>
             <li><a href="Prihlaseni.html">Přihlášení</a></li>
         </ul>
     </nav>
@@ -54,24 +62,28 @@
                 <!-- Pravá strana sekce s kontaktním formulářem -->
                 <div class="PravaStrana">
                     <div class="topic-text">Pošlete mi zprávu</div>
-                    <p>Pokud máte nějaké dotazy, můžete mi napsat zde, bude mi potěšením Vám pomoci</p>
                 
-                <form action="#">
+                <form action="zpracovani.php" method="post">
                     <!-- Vstupní pole pro jméno -->
                     <div class="input-box">
-                        <input type="text" placeholder="Napiště jméno">
+                        <input type="text" name="jmeno" placeholder="Napiště jméno">
                     </div>
                     <!-- Vstupní pole pro email -->
                     <div class="input-box">
-                        <input type="email" placeholder="Napište Email">
+                        <input type="email" name="email" placeholder="Napište Email">
                     </div>
                     <!-- Vstupní pole pro zprávu -->
-                    <label for="input-box message-box">Vyberte nabídku:</label>
-                        <select name="input-box message-box" required>
+                    <label for="services">Vyberte nabídku:</label>
+                        <select name="services" required>
                             <option value="">-- Vyberte nabídku --</option>
+                            <?php
+                            while ($row = $result->fetch_assoc()) {
+                                echo "<option value='".$row["id"]."'>".$row["nazev"]."</option>";
+                            }
+                            ?>
                     <!-- Tlačítko pro odeslání formuláře -->
                     <div class="button">
-                        <input type="button" value="Poslat hned">
+                        <input type="submit" value="Poslat hned">
                     </div>
                 </form>
                 </div>
